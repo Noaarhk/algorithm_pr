@@ -52,6 +52,8 @@ def solution(progresses, speeds):
 #         answer.append(cnt)
 #
 #     return answer
+import math
+
 
 def solution_3(progresses, speeds):
     answer = []
@@ -61,7 +63,8 @@ def solution_3(progresses, speeds):
     while progresses:
 
         cnt = 0
-        p = (100 - progresses[0]) / speeds[0]
+        # 첫번째 기능이 완성되기까지 남은 일수
+        p = math.ceil((100 - progresses[0]) / speeds[0])
 
         for i in range(len(progresses)):
             progresses[i] += (p * speeds[i])
@@ -81,14 +84,14 @@ def solution_3(progresses, speeds):
 
 
 if __name__ == '__main__':
-
     # progresses = [93, 30, 55]
     # speed = [1, 30, 5]
 
-    progresses = [2,2,1,2]
-    speed = [1,1,1,1]
+    progresses = [5, 5, 5]
+    speed = [21, 22, 20]
 
     # progresses = [95, 90, 99, 99, 80, 99]
     # speed = [1, 1, 1, 1, 1, 1]
 
     print(solution_3(progresses, speed))
+    # print(95/21)
