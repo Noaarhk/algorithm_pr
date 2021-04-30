@@ -14,7 +14,7 @@ def my_solution(arr, divisor):
 
 
 def gods_solution(arr, divisor):
-    # python은 or 앞이 참일경우 해당 값까지만 , 거짓일경우 뒤에 것까지 호출
+    # python은 or 앞이 참일경우 해당 값까지만 , 거짓일경우 뒤에 것 호출
     return sorted(n for n in arr if n % divisor == 0) or [-1]
 
 

@@ -21,6 +21,9 @@ def solution(array, commands):
 
 def simple_solution(array, commands):
     # map (함수, 리스트 ) 리스트의 각 요소를 함수에 넣어서 리스트에 반환한다.
+    # 1. x = [2,5,3]
+    # 2. x = [4,4,1]
+    # 3. x = [1,7,3]
     return list(map(lambda x: sorted(array[x[0] - 1:x[1]])[x[2] - 1], commands))
 
 

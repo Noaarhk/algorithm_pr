@@ -51,39 +51,41 @@ def solution_3(bridge_lenth, weight, truck_weights):
 #     return time
 
 
-def solution_re(bridge_length, weight, truck_weights):
-    truck_weights.reverse()
-    wait = truck_weights
-    crossed = []
-    time = 0
-
-    bridge_empty_check = []
-    bridge_on = [[] for _ in range(bridge_length)]
-    for i in range(bridge_length):
-        bridge_empty_check.append(bool(bridge_on[i]))
-
-    while True in bridge_empty_check or wait:
-
-        # 다리가 비어있는경우
-        for i in range(bridge_length):
-            if True not in bridge_empty_check:
-
-                bridge_on[-i - 1].append(wait.pop())
-                time += 1
-            # 다리가 비어있지 않는 경우
-            else:
-                # 다리 하중 검사
-                # if bridge_on[-1]
-                bridge_on[-i - 2].append(bridge_on[-i - 1].pop())
-                time += 1
-
-    # 2차배열 조작 불가 -> ㅍ포
-    print(wait)
-    print(bridge_on)
-    print(bridge_empty_check)
-
-    return time
+# def solution_re(bridge_length, weight, truck_weights):
+#     truck_weights.reverse()
+#     wait = truck_weights
+#     crossed = []
+#     time = 0
+#
+#     bridge_empty_check = []
+#     bridge_on = [[] for _ in range(bridge_length)]
+#     for i in range(bridge_length):
+#         bridge_empty_check.append(bool(bridge_on[i]))
+#
+#     while True in bridge_empty_check or wait:
+#
+#         # 다리가 비어있는경우
+#         for i in range(bridge_length):
+#             if True not in bridge_empty_check:
+#
+#                 bridge_on[-i - 1].append(wait.pop())
+#                 time += 1
+#             # 다리가 비어있지 않는 경우
+#             else:
+#                 # 다리 하중 검사
+#                 # if bridge_on[-1]
+#                 bridge_on[-i - 2].append(bridge_on[-i - 1].pop())
+#                 time += 1
+#
+#     # 2차배열 조작 불가 -> ㅍ포
+#     print(wait)
+#     print(bridge_on)
+#     print(bridge_empty_check)
+#
+#     return time
 
 
 if __name__ == '__main__':
-    print(solution_3(2, 10, [7, 4, 5, 6]))
+    # print(solution_3(2, 10, [7, 4, 5, 6]))
+    a = [ 0 ]* 2
+    print( a)
