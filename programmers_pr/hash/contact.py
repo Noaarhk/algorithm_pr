@@ -2,6 +2,7 @@
 한 번호가 다른 번호의 접두사인 경우가 있으면 False, 아니면 True
 '''
 
+
 # 테스트케이스 3개 실패
 # def my_solution(phone_book):
 #
@@ -11,6 +12,7 @@
 #                 return False
 #     return True
 #
+# phonebook = ["119", "97674223", "1195524421"]
 # # 시간 복잡도?
 def my_solution_2(phone_book):
     # phone_dict = {}
@@ -23,6 +25,8 @@ def my_solution_2(phone_book):
         if temp in item and temp != item:
             return False
     return True
+
+
 #
 #
 #
@@ -52,7 +56,6 @@ import collections
 
 
 def my_solution(phone_book):
-
     for item in phone_book:
         comp = list(map(lambda x: x[:len(item)], phone_book))
         for i in range(len(comp)):
@@ -62,9 +65,6 @@ def my_solution(phone_book):
                 return False
         return True
 
-
-
-
     # for item in phone_book:
     #     cmp = collections.Counter(list(map(lambda x: x[:len(item)], phone_book)))
     #     for i in cmp.values():
@@ -72,15 +72,16 @@ def my_solution(phone_book):
     #             return False
     # return True
 
-def others_solution(phoneBook):
 
+def others_solution(phoneBook):
     phoneBook = sorted(phoneBook)
     print(phoneBook)
     for p1, p2 in zip(phoneBook, phoneBook[1:]):
-        print(p1, p2 ,sep=',')
+        # print(p1, p2, sep=',')
         if p2.startswith(p1):
             pass
     return True
+
 
 if __name__ == '__main__':
     a = ["119", "97674223", "1195524421"]

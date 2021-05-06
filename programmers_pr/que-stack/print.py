@@ -20,7 +20,6 @@ def solution(priorities, location):
             return i + 1
 
 
-
 if __name__ == '__main__':
     # A = list("abcd")
     # B = deque(A)
