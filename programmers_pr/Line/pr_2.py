@@ -49,7 +49,7 @@ def solution(array):
         ar_en.append((v, i))
 
     ans = [0] * len(array)
-    # print(ar_en)
+    print(ar_en)
     for v, i in ar_en:
         tmp = []
         for j in range(len(array)):
