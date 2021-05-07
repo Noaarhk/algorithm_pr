@@ -25,8 +25,8 @@ print(answer)
 from functools import reduce
 
 #
-# answer_2 = reduce(lambda x, y: x + y, [0, 1, 2, 3, 4])
-# print(answer_2)
+answer_2 = reduce(lambda x, y: x * y, [1, 2, 3, 4])
+print('multiply_ all = ', answer_2)
 # answer_3 = reduce(lambda x, y: y + x, 'abcde')
 # print(answer_3)
 #
@@ -45,4 +45,3 @@ student_tuples = [
 ]
 sorted(student_tuples, key=lambda student: student[2])   # sort by age
 
-print(solution())
