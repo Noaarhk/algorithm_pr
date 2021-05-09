@@ -62,7 +62,6 @@ class DoublyLinkedList:
             node.next = new_node
             return True
 
-
         # # empty state
         # if not self.head:
         #     self.head = Node(new_data)
@@ -82,3 +81,7 @@ class DoublyLinkedList:
         while node:
             print(node.data)
             node = node.next
+
+
+if __name__ == '__main__':
+    pass

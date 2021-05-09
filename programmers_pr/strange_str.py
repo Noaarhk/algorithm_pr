@@ -27,12 +27,19 @@ def solution_1(s):
     s_list = s.split(" ")
     print(s_list)
 
-
     return None
-
-
 
 
 if __name__ == '__main__':
     s = "try hello world"
-    print(solution_0(s))
+    dict = {}
+    s_l = list(s)
+    # for i in s.split(" "):
+    #     dict[i].append(i)
+    # print(solution_0(s))
+    # s_l = [i for i in range(len(s)) if i % 2 == 0]
+    # print([i for i in range(20)])
+    a = sorted(enumerate(s.split(" ")))
+    print(s.index('l'))  # -> 제일 먼저 나오는 인덱스 리턴
+    print(s_l.index('l'))
+
